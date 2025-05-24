@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 研究方法導師：問卷研究</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-container">
+        <h1>AI 研究方法導師：問卷研究</h1>
+    </header>
+
+    <main class="container">
+        <h2>問卷研究：從概念到實踐</h2>
+        <p>歡迎來到問卷研究的深度指南。在這裡，您將學習問卷設計、實施與分析的關鍵步驟。</p>
+
+        <section class="main-content-grid">
+            <div class="topic-card">
+                <h3>主題一：研究問題的精確化與假設的建立</h3>
+                <p>實驗研究的起點在於一個清晰且可驗證的研究問題。研究假設則是基於理論或文獻預測變數之間關係的陳述，是實驗設計的指導方向。</p>
+                <ul>
+                    <li>你的研究問題具體且明確嗎? 你想要探討哪兩個(或多個)變數之間的關係?</li>
+                    <li>基於你對相關文獻的理解，你預期自變數會如何影響依變數? 你能提出一個明確的研究假設嗎?</li>
+                    <li>你的研究假設是可驗證的嗎? 你可以設計一個實驗來檢驗這個假設嗎?</li>
+                    <li>是否存在其他可能的解釋(競爭假設)? 你的實驗設計如何排除這些解釋?</li>
+                </ul>
+                <button class="inspiration-button">AI 導師提問：尋找靈感</button>
+            </div>
+
+            <div class="topic-card">
+                <h3>主題二：問卷的構念化與操作化</h3>
+                <p>在設計問卷之前，需要清晰地界定研究中的抽象概念(構念)，並將其轉化為可測量的具體變數(操作化)。這直接影響問卷題目的設計。</p>
+                <ul>
+                    <li>你研究中的核心構念是什麼? 它們包含哪些重要的面向或維度?</li>
+                    <li>你將如何將這些抽象構念操作化為具體的問卷題目? 你的測量指標是什麼?</li>
+                    <li>你選擇的測量尺度(例如：名義尺度、順序尺度、等距尺度、比率尺度)是否適合你的構念?</li>
+                    <li>你是否考慮了潛在的測量誤差? 你將如何盡量減少這些誤差?</li>
+                </ul>
+                <button class="inspiration-button">AI 導師提問：尋找靈感</button>
+            </div>
+
+            <div class="topic-card">
+                <h3>主題三：干擾變數的控制</h3>
+                <p>干擾變數是指除自變數外，非研究者所關注的變數。有效的實驗設計需要能控制這些變數，以確保觀測到的效果是由自變數引起的。</p>
+                <ul>
+                    <li>有哪些潛在的干擾變數可能會影響你的依變數?</li>
+                    <li>你將採取哪些方法來控制或量化這些干擾變數? (例如：隨機分派、保持環境一致、納入控制組等)</li>
+                    <li>你的控制方法是否能有效地排除干擾變數的影響?</li>
+                    <li>是否存在一些你無法控制的干擾變數? 這些變數可能會如何影響你的研究結果?</li>
+                </ul>
+                <button class="inspiration-button">AI 導師提問：尋找靈感</button>
+            </div>
+
+            <div class="topic-card">
+                <h3>主題四：實驗設計的類型與選擇</h3>
+                <p>實驗存在多種實驗設計類型，例如獨立樣本設計、重複測量設計、配對樣本設計等。不同的設計各有其優缺點，適用於不同的研究情境。</p>
+                <ul>
+                    <li>你選擇了哪種實驗設計類型? 為什麼這種設計最適合你的研究問題?</li>
+                    <li>你的設計如何處理隨機性? (例如：隨機分配在獨立樣本設計中的作用，重複測量設計的優勢)</li>
+                    <li>你的設計是否會產生順序效應? (在重複測量設計中) 你將如何處理?</li>
+                    <li>你的設計在統計分析和結果解釋方面有哪些考量?</li>
+                </ul>
+                <button class="inspiration-button">AI 導師提問：尋找靈感</button>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="chat-container">
+            <h3>向 AI 導師提問</h3>
+            <p>對問卷研究有疑問? 輸入您的問題，讓 AI 導師為您解答。</p>
+            <textarea id="user-question" placeholder="請輸入您的問題..." rows="5"></textarea>
+            <button id="submit-button">送出問題</button>
+            <div id="ai-response-area" class="ai-response-area"></div>
+            <div id="loading-spinner" class="loading-spinner" style="display: none;">正在思考中...</div>
+            <div id="error-message" class="error-message" style="display: none;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>AI 研究方法導師 - 專案演示</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
