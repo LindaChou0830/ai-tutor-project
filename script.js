@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 這裡需要替換成你的後端 API 端點
     // 例如：如果你用 Flask 部署在本地，可能是 'http://127.0.0.1:5000/ask_ai'
     // 如果部署在 Heroku/Render 等平台，會是一個公共 URL
-    const BACKEND_API_ENDPOINT = 'http://localhost:5000/ask_ai'; // *** 請替換為你的實際後端 API URL ***
+    const BACKEND_API_ENDPOINT = 'https://my-ai-tutor.onrender.com'; // *** 請替換為你的實際後端 API URL ***
 
     submitButton.addEventListener('click', async () => {
         const question = userQuestionInput.value.trim();
