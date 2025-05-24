@@ -69,6 +69,28 @@ else:
         print("請檢查你的 API Key 是否有效且正確。應用程式將退出。", file=sys.stderr)
         sys.exit(f"應用程式啟動失敗：Gemini API Key 無效或連接問題。錯誤: {e}")
 
+from flask import Flask, request, jsonify, send_from_directory # 確保導入 send_from_directory
+from flask_cors import CORS
+# ... 其他導入 ...
+
+app = Flask(__name__)
+CORS(app)
+
+# ... 其他現有代碼 ...
+
+# 新增的路由，用於提供 index.html 和其他靜態文件
+@app.route('/')
+def serve_index():
+    return send_from_directory('.', 'index.html') # 提供根目錄下的 index.html
+
+# 如果你有其他靜態文件（如 style.css, script.js），可以這樣提供
+# Render.com 通常會自動處理這些，但手動指定更穩妥
+@app.route('/<path:filename>')
+def serve_static(filename):
+    return send_from_directory('.', filename)
+
+
+
 @app.route('/ask_ai', methods=['POST'])
 def ask_ai():
     if not GEMINI_API_KEY:
